@@ -36,21 +36,24 @@
         </div>
     </div>
     <footer>
-        <div class="kaalia"><b>[Student Name]</b></div>
-        <div class="kaalia"><b>[University Roll No.]</b></div>
+        <div class="kaalia" id="name2"><b>[Student Name]</b></div>
+        <div class="kaalia" id="roll"><b>[University Roll No.]</b></div>
         <div class="kaalia"><b>[GLA University]</b></div>
-        <div class="kaalia" id="name2"><b>kaalia</b></div>
+        <div class="kaalia" id="date"><b>aryan</b></div>
     </footer>
     
     <script>
-        function date123(){
-            document.getElementById("date1").innerHTML=Date();
+       
+        function date(){
+            var k=prompt("Enter Today's Date");
         }
-        function name(){
-            var k=prompt("enter ur name:");
-        }
-        document.getElementById("name2").innerHTML=k;
-        name();
+        document.getElementById("name2").innerHTML="[ Aryan bhatt ]";
+        document.getElementById("name2").style.fontWeight="bold";
+        document.getElementById("roll").innerHTML="[ 201500144 ]"
+        document.getElementById("roll").style.fontWeight="bold";
+        document.getElementById("date").innerHTML=" [ 11 - July - 2022 ]";
+        document.getElementById("date").style.fontWeight="bold";
+        date();
     </script>
 </body>
 </html>
